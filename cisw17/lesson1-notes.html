@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 1 Notes
+         9/02/2024 -->
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Lesson 1 Notes</h1>
+    </header>
+        <h2>Lesson 1: Understanding How the Web Works</h2>
+        <ul>
+            <h3>What You'll Learn in this Lesson</h3>
+            <li>A very brief history of the World Wide Web</li>
+            <li>What is meant by the term web page and why this term doesn’t always reflect all the content involved</li>
+            <li>How content gets from your personal computer to someone else’s web browser</li>
+            <li>How to select a web hosting provider</li>
+            <li>How different web browsers and device types can affect your content</li>
+            <li>How to transfer files to your web server by using FTP</li>
+            <li>Where files should be placed on a web server</li>
+            <li>How to distribute web content without a web server</li>
+            <li>How to use other publishing methods, such as blogs</li>
+            <li>Tips for testing the appearance and functionality of web content</li>
+        </ul>
+        <p>
+             Sir Tim Berners-Lee developed the Hypertext Markup Language (HTML) to cross-reference text over the internet. By 1993, 100 computers were capable of processing HTML pages, and this network of computers was dubbed the world wide web. 
+             Web browsers, a specific type of appllications, are developed to enable people to view web pages. As popularity of the web grew, web browsers also grew to allow more types of media to be displayed. 
+             The delivery of web based content to users involves several processes that occurs in different locations, and these processes could occur multiple times between the browser and the server before the full webpage could be displayed. While web pages could be viewed locally,
+             having a web hosting provider is recommended. Finding and utilizing a web hosting provider is usually an easy task, and some criterias like reliability/server "uptime," customer service, server space, bandwidth, domain name purchase and management, and price, should be considered 
+             when looking for a good provider. In order to ensure all visitors could properly view a webpage, it is essential to test with multiple different web browsers and devices. This is because different browsers could display different content differently, which could result in 
+             a different appearance than what was expected. The process of transferring files to a web server uses a client called the FTP Client, which uses the File Transfer Protocol to transfer files from your local computer to a web server. 
+             Maintaining web content involves organizing files into directories, making management of the webpage more efficient. 
+        </p>
+        <br>
+        <h2>Lesson 2: Structuting an HTML Document</h2>
+        <ul>
+            <h3>What You'll Learn in this Lesson</h3>
+            <li>How to create a simple web page in HTML</li>
+            <li>How to include all the HTML tags that every web page must have</li>
+            <li>How to organize a page with paragraphs and line breaks</li>
+            <li>How to organize your content with headings</li>
+            <li>How to use the semantic elements of HTML5</li>
+            <li>How to use semantic tags to indicate header and footer content</li>
+            <li>How to use semantic tags to indicate navigational and secondary content</li>
+            <li>How to use semantic tags to better structure body content</li>
+        </ul>
+            <h3>HTML Tags Every Webpage Must Have</h3>
+        <p>
+            The first line of code should be &lt;!doctype html>, which indentifies the document as using HTMl5. An opening tag (< >)indicates the start of a HTML command, while a closing tag (&lt;/ >) indicates the end of a command. An empty tag issues commands without any enclosing text within the tag. 
+            The body tag tells the browser where the actual body content is. The top of the browser window display the text that is located in the title tag. The character set used by the webpage is declared by the tag &lt;meta charset="utf-8">. Body and titles tags should be used in every page as it is required 
+            on every webpage. 
+        </p>
+
+        
+
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>&lt;html>…&lt;/html></td>
+                <td>Encloses the entire HTML document</td>
+            </tr>
+            <tr>
+                <td>&lt;head>…&lt;/head></td>
+                <td>Encloses the head of the HTML document, located within the HTML tag pair</td>
+            </tr>
+            <tr>
+                <td>&lt;meta charset="utf-8"></td>
+                <td>Defines the character set for the document, which in this case is UTF-8</td>
+            </tr>
+            <tr>
+                <td>&lt;title>…&lt;/title></td>
+                <td>Indicates the title of the document/webpage. Located within the head tag pairs</td>
+            </tr>
+            <tr>
+                <td>&lt;body>…&lt;/body></td>
+                <td>Encloses the body of the HTML document, within the html tag pairs</td>
+            </tr>
+            <tr>
+                <td>&lt;p>…&lt;/p></td>
+                <td>Encloses a paragraph & skips 1 line between paragraphs</td>
+            </tr>
+            <tr>
+                <td>&lt;br></td>
+                <td>Displays a line break</td>
+            </tr>
+            <tr>
+                <td>&lt;hr></td>
+                <td>Displays a horizontal rule</td>
+            </tr>
+            <tr>
+                <td>&lt;h1>&lt;/h1></td>
+                <td>Encloses a 1st level heading</td>
+            </tr>
+            <tr>
+                <td>&lt;h2>&lt;/h2></td>
+                <td>Encloses a 2nd level heading</td>
+            </tr>
+            <tr>
+                <td>&lt;h3>&lt;/h3></td>
+                <td>Encloses a 3rd level heading</td>
+            </tr>
+            <tr>
+                <td>&lt;h4>&lt;/h4></td>
+                <td>Encloses a 4th level heading</td>
+            </tr>
+            <tr>
+                <td>&lt;h5>&lt;/h5></td>
+                <td>Encloses a 5th level heading</td>
+            </tr>
+            <tr>
+                <td>&lt;h6>…&lt;/h6></td>
+                <td>Encloses a 6th level heading</td>
+            </tr>
+            <tr>
+                <td>&lt;header>…&lt;/header></td>
+                <td>Contains introductory information</td>
+            </tr>
+            <tr>
+                <td>&lt;footer>…&lt;/footer></td>
+                <td>Contains supplementary information for the webpage, like copyright or author information</td>
+            </tr>
+            <tr>
+                <td>&lt;nav>…&lt;/nav></td>
+                <td>Contains navigational elements for the webpage</td>
+            </tr>
+            <tr>
+                <td>&lt;section>…&lt;/section></td>
+                <td>Contains contents similar in theme</td>
+            </tr>
+            <tr>
+                <td>&lt;article>…&lt;/article></td>
+                <td>Contains content that is a standalone body of work</td>
+            </tr>
+            <tr>
+                <td>&lt;aside>…&lt;/aside></td>
+                <td>Contains secondary element for its parent element</td>
+            </tr>
+            <tr>
+                <td>&lt;address>…&lt;/address></td>
+                <td>Contains address information for its nearest article or body element</td>
+            </tr>
+          </table>
+    <footer>
+        
+    </footer>
+</body>
+</html>

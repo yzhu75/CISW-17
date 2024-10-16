@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 6 Notes
+         10/07/2024 -->
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lesson 6 Notes</h1>
+    </header>
+    <main>
+        <!-- LESSON NOTE TEMPLATE
+         
+        <div id="lesson#">
+            <h2>
+                Lesson #
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li></li>
+            </ul>
+
+            <p>
+
+            </p>
+            <br>
+        </div>
+
+        -->
+        <div id="lesson12">
+            <h2>
+                Lesson 12: Creating Layouts Using Modern CSS Techniques
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How fixed layouts work</li>
+                <li>How liquid layouts work</li>
+                <li>How to create a fixed/liquid hybrid layout</li>
+                <li>How to create CSS flexible box layouts</li>
+                <li>How to use CSS grid layouts</li>
+            </ul>
+
+            <p>
+                Many web designers forget that most people don't view their pages as they do. Designers use large computer monitors (sometimes multiple) with web browsers that take up a lot of space. My default browser is currently set to 1500px by 900px on a 5120 × 2880 display, but I can increase its size. StatCounter reports that the most common resolution worldwide is 360 × 640, with 23% share. In the US, the most common resolution is 1920 × 1080. A fixed-width layout sets the page body to a specific width. A master “wrapper” element with all the content controls that width. Set the width property of a wrapper element (e.g., &lt;div>) in the style sheet if it has an ID value like main or wrapper (name is optional). In a liquid layout, the page body does not use a specified width in pixels, but it may be enclosed in a master wrapper element with a percentage width. Taking advantage of space without suffocating content is tricky. Not enough content in an open space is underwhelming; too much is overwhelming. Text becomes harder to read if the screen is too wide. A liquid layout can be impressive, but it needs a lot of testing to work in a variety of browsers and screen resolutions. 
+            </p>
+            <p>
+                A fixed/liquid hybrid layout combines both types. A fluid layout could include fixed-width content areas in the body or as anchor elements like a left-side column or top navigation strip. Create a fixed content area that acts like a frame and stays fixed as users scroll through the content. Many users may view your site on a small mobile phone that is less than 400 pixels wide, but not on a desktop browser. Extrapolate and apply this information broadly: Even in fixed/liquid hybrid sites, your layout will fail unless you prevent it. Use the min-width CSS property. The min-width property sets an element's minimum width without padding, borders, or margins. All CSS layout systems start with display. Before CSS3, display could be inline, block, or none. This allowed you to change or hide elements in the normal flow. New CSS3 values include list-item and inline-block, indicating elements with characteristics of both inline and block elements, similar to &lt;img> elements. More display property values that aid layout will be covered in the following sections. 
+            </p>
+            <br>
+        </div>
+        <div id="lesson13"></div>
+            <h2>
+                Lesson 13: Taking Control of Backgrounds and Borders
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to layer backgrounds</li>
+                <li>How to use gradients as backgrounds</li>
+                <li>How to use CSS properties to create “zebra-stripe” tables automatically</li>
+                <li>How to create rounded corners on elements</li>
+                <li>How to use images as borders</li>
+                <li>How outlines are different from borders</li>
+            </ul>
+
+            <p>
+                The shorthand property background lets you define multiple background properties at once. Set the following properties with this property:
+                <ul>
+                    <li>background-image</li>
+                    <li>background-position</li>
+                    <li>background-size</li>
+                    <li>background-repeat</li>
+                    <li>background-origin</li>
+                    <li>background-clip</li>
+                    <li>background-attachment</li>
+                    <li>background-color</li>
+                </ul>
+                When working with borders and backgrounds, it's easy to forget you have options. You can style all four borders of an element and layer backgrounds to create different effects. Most people use the border property to style all four borders of an element, but there are other options. Border-top, border-right, border-bottom, and border-left are four other shorthand properties that work similarly but only on one side of the element. Using multiple backgrounds on one element is unusual. Stack border images on elements to create layered effects with CSS3. This helps if your images have transparent or clipped areas that let color or images below show through. CSS has several background properties designers rarely use. These properties give you more control over background display and more tools for animation and interactivity in web pages. Gradients have been popular since images were added to websites. Adding them was hard before. Big images with lots of colors and little compression were required. Most designers ignored them. Modern CSS and browsers let web designers create beautiful gradients without images. Linear gradients are gradients that change color along a straight line. They can move horizontally from left to right, vertically from top to bottom, or across any diagonal angle you choose. The default is vertical, or top to bottom. You set a linear gradient by using the linear-gradient() expression, with a comma-separated list of colors inside the parentheses. For example, you can create a gradient from pink (#ff00d5) to green (rgba(39, 164, 0, 0.5)) to blue like so: 
+            </p>
+            <p>
+                As mentioned in previous lessons, HTML elements are rectangular blocks, which can make web pages look boxy and rigid. But with border-radius properties, you can make round or square corners. Simply set the corner curve. A color change will show the rounded corner and curve all four corners of the element. Set all four corners at once or at different values with the border-radius property. It can have one to four values.
+                You can set all four corners with one value. If you use two values, set the top-left and bottom-right corners to the first value and then the second. The first value sets the top-left corner and the third value sets the bottom-right corner if you use three values. All four corners can be set with four values in this order: top-left, top-right, bottom-right, and bottom-left. Outlines are lines around web page objects to highlight them. The W3C distinguishes outlines from borders in three ways: Outlines do not take up space, outlines may be non-rectangular, browsers and other user agents often render outlines on elements when they are in the :focus state. Because outlines don't take up space, they can cover content, are usually drawn outside the element's border, do not increase its dimensions. Not in the box model.
+            </p>
+            <br>
+        </div>
+        <div id="lesson14"></div>
+            <h2>
+                Lesson 14: Using CSS Transformations and Transitions
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to transform elements by rotating, scaling, moving, and tilting</li>
+                <li>How to work with transformations in three dimensions</li>
+                <li>How to apply multiple transformations to one element</li>
+                <li>How to do simple animations with the transition property</li>
+            </ul>
+
+            <p>
+                CSS allows multiple element transformations. The following transformation functions are popular: rotate, scale, translate, and skew. All these transformations are done using the transform property and its 11 transformation functions: rotate, scale, scalex, scaley, skew, skewx, skewy, translate, translatex, translatey, and matrix. Rotate an element by setting the rotate() value to a degree between 0deg and 360deg (or −360deg to 0deg). The element rotates that many degrees clockwise for positive numbers or counterclockwise for negative numbers. Scale() changes an element's size. Scale() multiplies the element's size by the scaling factor. For instance, 1 means no scaling, 0.5 means half the current size, and 3 means three times. Translate() of the transform property moves an element horizontally or vertically from its default position on the page. It takes two comma-separated values. Translatex and translatey can move an element only horizontally and vertically, respectively. Thus, you can move an element 50 pixels right and 20 pixels down from its normal page position: To skew an element horizontally and vertically, use transform: skew(). As with other transform functions, skewx() and skewy() can affect only the horizontal and vertical axes. If you give skew() one value, it defines the horizontal (skewx()) axis slant; otherwise, you include the horizontal and vertical values separated by a comma. The previous examples use one transformation, but you can use as many as you need, separating each pair of methods with a space.
+            </p>
+            <p>
+                All the properties discussed to this point in the lesson apply to elements in two-dimensional space. But the CSS transform function can also affect elements in three dimensions. There are 3D versions of most of the transform functions, including the following: rotatex(), rotatey(), and rotate3d(x, y, z, angle). scale3d(x, y, z) and scalez(). translate3d(x, y, z) and translatez(). The key to three-dimensional transformation is defining the perspective. Setting the perspective property on the parent element works best. This property controls the effect's intensity; farther away is less intense than close. Any length value can be the perspective. Using transition properties, you can create simple animations after transforming elements. These properties let the browser control animations based on CSS. The transition property abbreviates several properties. After setting a property to transition, you must control its time, how, and start. Transition-duration, transition-timing-function, and transition-delay are needed for these effects. Transitions make it easy to add animation to your web pages, but there are some situations where you might want an animation, but there isn’t an appropriate CSS selector. For example, CSS has a :hover class but doesn’t have a :click pseudo-class, so if you want to trigger a transition when someone clicks on an element, you need to do it with JavaScript. 
+            </p>
+            <br>
+        </div>
+        <div id="lesson15"></div>
+            <h2>
+                Lesson 15: Animating with CSS and the Canvas
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to generate a CSS animation
+                <li>How CSS animations are different from transitions and how they are similar
+                <li>Creating keyframes to hold and control animations
+                <li>Using the HTML5 &lt;canvas> element for self-contained animations
+            </ul>
+
+            <p>
+                CSS animations let you animate transformations and transitions independently. No document trigger event is needed to start the animation. CSS animation has two parts: animated styles and keyframes that show their start and end states. With a keyframe, you define animation state changes. After setting up an animation, you can use CSS animation properties to customize its appearance.  Watch the animation-timing-function property first. Similar to the transition-timing-function property, this property tells the browser how to accelerate and decelerate curve animation. Ease, linear, ease-in, ease-out, and cubic-bezier are all valid values. Cubic-bezier() maps four values to Bézier curve points P0, P1, P2, and P3. Another way to control animation timing is with animation-delay. This works exactly like Lesson 14's transition-delay property. You decide how long the browser waits before animating. When you delay animations, they may not behave as expected. Animations will not affect the element before or after the first or last keyframe. 
+                Changing animation-iteration-count changes how often the animation repeats. Enter a number or the keyword infinite to repeat it indefinitely. Designers often forget that CSS's animation-play-state property can pause animations. Paused and running values. Pausing an animation stops it from animating, and running it does. Users can stop animations by adding them to pseudo-classes like :hover. 
+            </p>
+            <p>
+                HTML &lt;canvas> creates a rectangular area for JavaScript-based drawing on a web page. It lets you add images, slide shows, games, and animations. Add the &lt;canvas> element to a document to create a blank canvas in the browser. The canvas element does not display anything on the screen due to its lack of width, height, or content. Typically, specify width, height, and an ID for script reference, such as: &lt;canvas id="myCanvas" width="350" height="450">&lt;/canvas> A canvas lets you draw, add images, and animate them. JavaScript is needed to draw on canvas. Include a &lt;script> element underneath the closing &lt;/body> tag in your HTML document. You can define the canvas and drawing context inside. Drawing shapes on canvas is simple. A few JavaScript lines can draw rectangles, circles, polygons, and lines. FillRect() creates a filled rectangle or square. Circles are drawn with arc(). Imagine drawing a circle with a protractor to learn how. Set the protractor point in the center of the circle, bend the angle to put the pen at the radius, draw at a point, and lift it at another. Draw a circle clockwise or counterclockwise. Many believe CSS animations are faster than JavaScript canvas animations. Transforms in 3D use the GPU, so the browser renders them faster. Most designers overlook JavaScript's 3D methods. There are some JavaScript features CSS cannot match. For instance, CSS animations cannot seek to a specific spot or smoothly reverse midstream. You must create a new animation to change speed or time scale. It's harder to learn JavaScript animation because you can do so much more than what you learned in this lesson.
+            </p>
+            <br>
+        </div>
+        <div id="CSSFlexbox"></div>
+            <h2>
+                CSS Flexbox
+            </h2>
+            <p>
+                The CSS Flexible Box allows for flexible positioning of elements in a container by adjusting their size to fill available space or prevent overflow, ensuring efficient layout on a line. 
+            </p>
+            <br>
+        </div>
+        <div id="CSSGrid"></div>
+            <h2>
+                CSS Grid
+            </h2>
+            <p>
+                The CSS Grid Layout enables you to define a container as a grid, specifying row and column sizes, and positioning child elements within the grid.
+            </p>
+            <br>
+        </div>
+        
+    </main>
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW-17 Yifan</p>
+    </footer>
+</body>
+</html>

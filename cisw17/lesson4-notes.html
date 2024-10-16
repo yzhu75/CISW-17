@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 4 Notes
+         9/24/2024 -->
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lesson 4 Notes</h1>
+    </header>
+    <main>
+        <div id="lesson6">
+            <h2>
+                Lesson 6: Working with Fonts, Text Blocks, Lists, and Tables
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to use boldface, italic, and special text formatting</li>
+                <li>How to tweak the font</li>
+                <li>How to use special characters</li>
+                <li>How to align text on a page</li>
+                <li>How to use the three types of HTML lists</li>
+                <li>How to nest lists within lists</li>
+                <li>How to create simple tables</li>
+                <li>How to control the size of tables</li>
+                <li>How to align content and span rows and columns within tables</li>
+                <li>How to use CSS columns</li>
+            </ul>
+            <p>
+                Most fonts have included special characters, like European characters like café's accented é. Mathematical symbols and punctuation signs like the circular • bullet are also present. Use codes to insert these special characters anywhere in an HTML text. HTML employs character entities to represent special characters like © and ®. Character entities always begin with & and conclude with ;.
+                Text was only shown in one style and size in the early days of the Web. Although, using HTML and CSS together now lets you change how text looks (typeface, size, color), as well as how it is aligned and shown on a web page. In the typewriter era, we used plain-text displays and underlines to emphasize. Use the &lt;strong>&lt;/strong> and &lt;em>&lt;/em> tag pairs instead of style rules for bold and italic text. The &lt;strong> tag functions similarly to the &lt;b> element in most browsers, while the &lt;em> tag formats text as italic. The &lt;strong> and &lt;em> tags are better than &lt;b> and &lt;i> because they just suggest highlighting the text, not how to do it. 
+            </p>
+            <p>
+                The &lt;font> element, now obsolete, controlled typefaces in web page content before style sheets. Font-family style rules let you choose text typefaces. You can and should supply multiple values for this style (separated by commas) so the browser can attempt alternatives if the first font isn't accessible. Font size and color are often controlled by font-size and color style rules. The font-size style can be adjusted to a specified size (small, medium, big) or a specific point size (12pt or 14pt). 
+                When reading online, most paragraphs are automatically oriented to the left, which is easy to overlook. However, you may align content to the right or justify text. HTML allows you to align a single block-level element, such as text within a &lt;p>&lt;/p> or &lt;div>&lt;/div> tag pair. Web pages can benefit from a list of elements for clarity. Three simple HTML lists exist: ordered, unordered, and definition lists. Using a table to layout information on your website is another option. Tabular data is organized into rows and cells. To create a table, use the &lt;table> tag. To close a table, use the &lt;/table> tag. Without a width, a table and its cells automatically expand to fit your data. This differs from HTML components like &lt;div> and &lt;p>, which adapt to their container width. To control the width of the table, use the width CSS property for the &lt;table> element. 
+            </p>
+            <br>
+        </div>
+        <div id="lesson7">
+            <h2>
+                Lesson 7: Using External and Internal Links
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to use anchor links</li>
+                <li>How to link between pages on your own site</li>
+                <li>How to link to external content</li>
+                <li>How to link to non-Web documents such as PDF and Word documents</li>
+                <li>How to link to an email address</li>
+                <li>How to use window targeting with your links</li>
+                <li>How to style your links with CSS</li>
+                <li>How to add descriptions to links</li>
+                <li>Best practices for web page links</li>
+            </ul>
+            <p>
+                HTML tags have been used to generate basic web pages. However, certain pieces of content are currently isolated. You must link your work to the Web or other pages on your site to make it web content. Hypertext links are used to link the document to other internal or external documents. Putting all website material in one folder is easiest. Simply provide the file name in the href attribute of the &lt;a> tag to link to files stored together. Tag attributes provide more information about the tag. The href attribute of the &lt;a> tag specifies the URL of the linked website or document. The &lt;a> tag, which handles hyperlinks on the web, is named after the word "anchor" as a link refers to a specific location on a web page. Mark a specific position on a page as an anchor using the &lt;a> tag to create a link to that location. Linking to material within the domain (or on the same machine, if you are viewing the site locally) does not require http:// before each address in the href attribute. 
+            </p>
+            <p> 
+                If the files are in the same folder, you can use the HTML file name alone. You can link to non-HTML documents the same way you do HTML ones. Other web assets include PDFs and word processors. Some linked documents should be downloaded to the user's PC. Since downloading is slow and certain operating systems don't allow it, web browsers aim to display as much as possible without downloading. Links with the attribute download require the browser to open a download dialog box. The &lt;a> tag allows connecting between email addresses, as well as between pages and parts of a page. This is the easiest way for website visitors to contact you. To display your email address, insert it in the href attribute and within the message between the &lt;a> and 
+                &lt;/a> tags. Pop-up windows, which advertise items or services, are browser windows that open automatically without the user's consent. In some cases, opening another window or targeting another location is useful. Target attribute indicates a legitimate browsing context, or “new window to open.” _blank is a special target name that opens a new window without a name. Link titles are often overlooked by web designers. Links with this property can have hidden descriptions on web pages. The link will seem as a typical link on the website, but the browser will display the message if visitors hover over it. Screen readers benefit from link titles since they can learn more before clicking. 
+            </p>
+            <br>
+        </div>
+        
+        <div id="lesson8">
+            <h2>
+                Lesson 8: Working Colors, Images, and Multimedia
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to choose colors for your website that work on the web</li>
+                <li>How to use CSS to set background, text, and border colors</li>
+                <li>How to select a graphics software package to use</li>
+                <li>How to prepare photographs for use online</li>
+                <li>How to create banners and buttons</li>
+                <li>How to reduce the number of colors in an image</li>
+                <li>How to create transparent images</li>
+                <li>How to prepare an image for a tiled background</li>
+                <li>How to create animated web graphics</li>
+                <li>How to place an image on a web page</li>
+                <li>How to describe images with text</li>
+                <li>How to specify image height and width</li>
+                <li>How to align images</li>
+                <li>How to use background images</li>
+                <li>How to use image maps</li>
+                <li>How to link to or embed multimedia files</li>
+                <li>How to use HTML5 audio and video elements</li>
+            </ul>
+            <p>
+                A website's color schemes and visual attractiveness are crucial, but you don't have to be an artist to use them or add a few enticing touches to a dull, square world. Make sure the color palette makes text easy to read on a word-heavy site. Use natural colors—Don't use earth tones; utilize colors you'd notice on a stroll around town and avoid bright colors that can strain your eyes. Use accessible colour combinations—Color blindness is widespread, therefore avoid using colour alone to distinguish crucial information. Use colors with strong contrast, especially for blocks of writing. To achieve specific goals, choose a narrow color palette—not 15 colors. Use style="background-color:blue;" in the &lt;body> tag or style sheet rule to set blue as the background color for a page. Naturally, a website displays many more colors than 16. With 140 color names, all browsers will show them equally. Names are subjective. The color chart of 140 cross-browser color names shows that fuchsia and magenta are indistinguishable. Fuchsia and magenta have the same RGB color values: rgb(255, 0, 255). RGB or hexadecimal color values are required if you want to use more than 16 W3C-compliant color names. To maintain standards compliance and precise control over the website's colors, use hexadecimal numbers. Color hexadecimal values indicate how much 
+                red, green, and blue light to blend into each color. The red, green, and blue components of the color are represented by two-digit hexadecimal values #rrggbb. ff means full brightness. cc means 
+                80% brightness. 99 means 60% brightness. 66 means 40% brightness. 33 means 20% brightness. 00 means none of this color component. Dark green is #003300, brilliant red is #ff0000, bluish-purple is #660099, and medium gray is #999999. 
+            </p>
+            <p>
+                Transferring and displaying large, high-resolution photos takes longer. Images are often measured in pixels, with a 300 × 200 image being 300 pixels wide and 200 pixels high. You must convert print-based photos to digital images or use a digital camera like  a smartphone to upload photos to the website. Some older devices may require you to utilize the specific software that came with the device to transfer photographs to the hard drive, but in most situations, you may connect the device and drag and drop files. To cleanly arrange pictures, multimedia, and JavaScript files, we put them in a separate images directory or a subdirectory of a generic assets directory (such as assets/images). The &lt;img> tag in Listing 8.2 has a short text description, such as alt="Half Dome". If the image doesn't load, alt text replaces it. You can ensure your page loads quickly and correctly by specifying each image's height and width. Web browsers can quickly and accurately make place for each image while laying out the page and waiting for the photos to transfer. Using specific properties, you may arrange images on a website like text. Images can be aligned horizontally and vertically with text and other images. Images are aligned with the left margin unless otherwise specified, like text. The text-align CSS attribute defaults to left. Smaller image thumbnails linking to larger images make more sense. Even though they only see a thumbnail of the larger image, you can arrange the thumbnails on the website so visitors can read all the written material. To create clickable links to other pages or images, use the &lt;a> tag from Lesson 7: Text Links. 
+            </p>
+            <br>
+        </div>
+
+
+        
+    </main>
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW-17 Yifan</p>
+    </footer>
+</body>
+</html>

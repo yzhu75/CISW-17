@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 2 Notes
+         9/9/2024 -->
+        <style>
+            body {
+              max-width: 50%;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">
+            Lesson 2 Notes
+        </h1>
+        
+    </header>
+        <h2>
+            Lesson 3: Understanding Cascading Style Sheets
+        </h2>
+        <h3>
+            What You'll Learn in this Lesson
+        </h3>
+        <ul>
+            <li>
+                How to create a basic style sheet
+            </li>
+            <li>
+                How to use style classes
+            </li>
+            <li>
+                How to use style IDs
+            </li>
+            <li>
+                How to construct internal style sheets and inline styles
+            </li>
+        </ul>
+
+        <p>
+            CSS is a programming language that defines specific style constructs, like fonts, collors, and positioning for web page elements. CSS Style sheets can be sto red directly in an HTML web page or stored in a separate style sheet file. Both ways apply style rules directly to HTML elements. CSS is a cascading style sheet, meaning all the styles in a style sheet form a hierarchy, in which specific styles override more general styles based on a precedence determined by CSS.
+            While CSS uses its own syntax, it does use some HTML elemtns, such as &lt;body>, &lt;h1>, &lt;p>, &lt;img>, &lt;a>, and &lt;footer>. They are called selectors and refer to the corresponding tags on the HTML documents that the styles should be applied to. Curly braces {} after the tag contains code that describes how the content should be styles using style rules. Style sheet measurements can be specified in inches, (in), centimeters (cm), pixels (px), widths of the letters m (em) or (rem).
+            There are also units for defining sizes relative to the width of the number 0 (ch), 1% of the viewport width or height (vw) or (vh), and relative to the container (%). Each style rule in a listing ends with a semicolon (;), which is used to separate style rules from each other. CSS includes various style properties that can be used to control fonts, colors, alignments, and margins. These style properties and grouped into 2 major groups
+        </p>
+        <ul>
+            <li>
+                Layout properties - Affects the positioning of elements on a webpage.
+            </li>
+            <li>
+                Formatting properties - Affects the visual display of elements on a webpage.
+            </li>
+        </ul>
+        <p>
+            One important layout property is the display property, which describes how an element should be displayed with respect to other elements, and it has five basic values
+            block - displayed on a new line, list-item - displayed on a new line with a bullet, inline - displayed inline with the current paragraph, inline-block - displayed as a block-level element inline with surrounding block elements, and none - not displayed. 
+            The display property controls the display of elements on a web page, affecting their placement in a rectangular area, and can be applied to most style rules. 
+        </p>
+        <p>
+            A style class is a custom set of formatting specifications that can be applied to any element on a webpage. When referencing a style class in HTML, just add the calss name in the class attribute of an element. A class is defined with a selector followed by a period and a class name. While classes are custom styles, they are not unique. Style IDs are unique in the sense that it is a custom set of formatting specifications that can only be applied to one element in a web page. A style ID is defined with a selector, followed by a # sign and a ID name. Referencing an ID tag can be done in HTML by specifying the ID name in the id attribute of an element, like &lt;p id="title">Some Title Goes Here&lt;/p>
+        </p>
+        <h3>
+            Definitions:
+        </h3>
+        <ul>
+            <li>
+                Layout properties - Properties that affects the positioning of elements on a webpage by modifying properties such as margins, padding, and alignment
+            </li>
+            <li>
+                Formatting properties - Properties that affects the visual display of elements on a webpage, like font type, size, and color.
+            </li>
+            <li>
+                CSS Class - A custom set of formatting specifications that can be applied to any element on a webpage
+            </li>
+            <li>
+                CSS ID - A custom set of unique formatting specifications that can be applied only once on each webpage. 
+            </li>
+        </ul>
+
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW 17 Fall 2024</p>
+    </footer>
+</body>
+</html>

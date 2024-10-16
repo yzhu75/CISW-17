@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Web Design Notes</title>
+    <!-- Yifan Zhu
+         Lesson 7 Notes | Responsive Web Design Notes
+         10/14/2024 -->
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 85%;
+            font-size: 18px;
+            line-height: 1.5em;
+            background-color: #f3f3f3;
+            color: #212427;
+            font-family: Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h1, h2{
+            font-weight: 400;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        @media screen and (min-width: 750px) {
+            h1{
+                font-size: 1.5em;
+            }
+            h2{
+                font-size: 1.25em;
+            }
+        }
+        @media screen and (max-width: 749px) {
+            body{
+                line-height: 1.2em;
+            }
+            h1{
+                font-size: 1.25em;
+            }
+            h2{
+                font-size: 1.1em;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Web Design Notes</h1>
+    </header>
+    <main>
+         
+        <div id="lesson16">
+            <h2>
+                Lesson 16: Understanding the Importance of Responsive Web Design
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>What is responsive web design (RWD)</li>
+                <li>Why we need RWD</li>
+                <li>What is progressive enhancement</li>
+                <li>How to write HTML that’s RWD ready</li>
+            </ul>
+
+            <p>
+                Responsive web design (RWD) optimizes viewing on the customer's device. RWD helps designers and site owners create “edit once, display anywhere” websites. The web designer creates one page that works on a wide-screen desktop or a small-screen cell phone without switching sites. Responsive websites adjust their layout to fit different devices. RWD makes these changes without scripts or programming, unlike older solutions. Instead, RWD defines fluid grids, variable font sizes. Progressive enhancement involves building a strong website foundation and adding enhancements as browsers and devices can handle them. Responsive design is easy to learn because it adds no HTML tags or attributes. As mentioned, you write well-formed, valid, and semantic HTML. HTML5, the latest version of HTML, helps web designers use progressive enhancement and RWD the most. You can build RWD sites with older HTML, but it's best to stay current.
+            </p>
+            <p>
+                Validate HTML, CSS, and JavaScript as you build a progressive enhancement site for responsive web design. HTML validation is simple and quick. Enter the URL to be validated at https://validator.w3.org. Upload a file or paste the HTML directly into the page to validate it. Jigsaw (https://jigsaw.w3.org/css-validator/) validates CSS similarly. 
+            </p>
+            <br>
+        </div>
+        <div id="lesson17">
+            <h2>
+                Lesson 17: Designing for Mobile Devices
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How mobile design differs from standard web design</li>
+                <li>What the Mobile First design philosophy is</li>
+                <li>How Mobile First is important to RWD</li>
+                <li>How to build responsive tables and images for mobile devices</li>
+                <li>How to use CSS columns to create responsive designs without media queries</li>
+            </ul>
+
+            <p>
+                Around October 2016, Statcounter reported that mobile usage surpassed desktop usage worldwide. While desktops still outnumber mobiles in North America, almost 40% of the market is mobile. Tablets plus mobile bring that number closer to 50%. If you ignore or downplay mobile, you're losing nearly half of North American and a majority of global audiences. Designing a mobile site requires more than testing on your phone after launch. Best mobile designs treat mobile devices as important as desktop computers, if not more so. Traditional web designers built a desktop site first, then modified it for mobile. Mobile First design reverses that formula: build a site for mobile users first, then for desktop users. Mobile First starts with creating the default mobile design for all your pages. Content comes first when designing for mobile devices.
+            </p>
+            <p>
+                Responsive websites face challenges with large tables and images, which can be difficult to handle on small devices and cause slow page loading. To make a table responsive, consider essential data, customer comparison, and screen sizes, as well as the necessary dimensions for legibility. Mobile First design ensures consistent data on all devices, hiding less important information until users need it. Responsive design should reflect data comparisons or make information digestible. CSS columns can be used to create responsive layouts, a technique often overlooked in creating layouts on different devices. Responsive web design (RWD) is not the only solution for mobile design. Alternatives include adaptive design, dynamic serving, separate sites for mobile, and creating apps. RWD can be challenging due to its one-size-fits-all approach, which may slow down pages. Content management is another challenge, as mobile customers have different goals and desires. RWD relies on modern, up-to-date browsers and devices, which may cause slower or non-functional pages on older devices.
+            </p>
+            <br>
+        </div>
+        <div id="lesson18">
+            <h2>
+                Lesson 18: Using Media Queries and Breakpoints
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to write a CSS media query</li>
+                <li>How to use different media types</li>
+                <li>How to create media query expressions</li>
+                <li>Understanding logical keywords in your queries</li>
+                <li>What CSS breakpoints are</li>
+                <li>How to define breakpoints</li>
+                <li>How to find the best breakpoints for your website</li>
+            </ul>
+
+            <p>
+                The W3C defines a media query as a logical expression that is true or false based on the device's media type, allowing web designers to define if/then statements. CSS media types and media queries were introduced in CSS2, with media queries becoming a full-fledged recommendation in 2012. Modern browsers and user agents support these stable tools. To effectively use media queries, one must master writing expressions, including basic expressions targeting browsers above, below, and between minimum and maximum widths, as well as more complex ones. Media query expressions utilize logical operators to define intricate scenarios, including the following operators: 
+            </p>
+            <ul>
+                <li> 
+                    and - The query matches all elements, such as a device in landscape mode with a 768px browser window, by combining features and types. 
+                </li>
+                <li>
+                    Comma-separated list - The OR logical operator matches features or types in a comma-separated list, matching both landscape and portrait browsers if any are true.
+                </li>
+                <li>
+                    not - The query will match if the query would normally return false.
+                </li>
+                <li>
+                    only - This prevents browsers that don't support media queries from applying the styles.
+                </li>
+            </ul>
+            <p>
+                CSS breakpoints are device features with media query declarations, adjusting design width to accommodate different devices. Most responsive designs have at least one breakpoint affecting design appearance. When choosing breakpoints for a website, it's crucial to consider that each additional breakpoint increases the cost of building and maintaining the website. CSS media queries define breakpoints based on device width, with three breakpoints for a Mobile First site: one for every browser, one for 480px to 1200px widths. Breakpoint numbers for RWD depend on customer and design. View site at different widths and use Responsive Design Mode to identify design breaks. Best practices for choosing breakpoints include choosing for design rather than device resolution, keeping breakpoints 1px different, considering device orientation, and optimizing for Retina devices. 
+            </p>
+            <br>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW-17 Yifan</p>
+    </footer>
+</body>
+</html>

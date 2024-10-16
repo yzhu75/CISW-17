@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 5 Notes
+         9/30/2024 -->
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lesson 5 Notes</h1>
+    </header>
+    <main>
+        <div id="lesson9">
+            <h2>
+                Lesson 9: Working Margins, Padding, Alignment, and Floating
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to add margins around elements</li>
+                <li>How to add padding within elements</li>
+                <li>How to keep everything aligned</li>
+                <li>How to use the float property</li>
+            </ul>
+
+
+            <p>
+                With style sheet margins, you can add space around a rectangular web element. Note that margin works with space outside the element. Use the margin property or any of the margin properties to set margins. The browser can set margins as auto in pixels, points, ems, or percentages. Three shorthand methods for setting margins, padding, and borders depend on how many values you use: One value—The size of all the margins, Two values—The size of the top/bottom margins and the left/right margins, Three values—The size of the top margin, the left and right margins (they are given the same value), and the bottom margin, and Four values—The size of the top, right, bottom, and left margins. Padding expands an element's rectangular area. Because padding is part of an element's content, it has the same style as the content, including the background color. Padding properties, like margin properties, specify a style rule's padding. Like margins, style rules can be padded with individual padding properties or the padding property. You can also express padding as a percentage or unit. The padding property sets all element padding, like margins. The same three methods as the margin property can be used to set padding. 
+            </p>
+            <p>
+                Controlling content alignment is helpful because web page content doesn't always fill the entire rectangular area. Alignment is needed to left-justify, right-justify, or center text in a rectangular area that spans multiple lines. Instead of text-align, vertical-align aligns elements vertically. The vertical placement of inline elements within a parent element is called the “current line”. To vertically align inline elements on the same line, set their vertical alignments to the same. The easiest way to center an image or block of content in your design is to set the horizontal (left and right) margins to auto. This only works for elements with a width set smaller than the container. Attempting to center a &lt;div> without setting its width will not work. Float allows elements to be moved around the design so other elements can wrap around them. Elements float horizontally, so you only have right and left values. A floating element will float as far right or left (depending on float value) as the containing element allows. 
+            </p>
+            <br>
+        </div>
+        <div id="lesson10"></div>
+            <h2>
+                Lesson 10: Understanding the CSS Box Model and Positioning
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How to conceptualize the CSS box model</li>
+                <li>How to change the box model the browser uses</li>
+                <li>How to position your elements</li>
+                <li>How to control the way elements stack up</li>
+                <li>How to manage the flow of text</li>
+            </ul>
+
+            <p>
+                In HTML, all elements are considered a "box," including paragraphs, &lt;div>s, images, and more. Box properties are consistent whether we see them or not and whether the style sheet specifies them. 
+            </p>
+
+            <img style = "width: 350px" src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9780135167069/files/graphics/10fig01.jpg">
+
+            <p>
+                 Every HTML block-level element can have a border, padding, and margin, and the box model describes how they are applied. Thus, all elements have padding between their content and borders. The border may or may not be visible, but it is there, as is a margin between the element's border and any other content outside it. In the default box model, you must consider all box model elements to determine an element's true or rendered height and width. Most design models start with a space and position elements within it. However, the default box model lets you stretch out beyond your space without realizing it. When using two &lt;div> elements in HTML, they should align side by side and take up 50% of the space. But they don't. But they don't. Since padding, border, and margin take up space. Thanks to CSS3, we can change that with the box-sizing property. HTML uses relative positioning by default. Relative positioning is like arranging checkers on a checkerboard: The checkers are arranged left to right, and you move to the next row at the board edge. Elements styled with the block display style property are automatically placed on a new row, while inline elements are placed next to the preceding element. CSS also supports absolute positioning, which lets you position HTML content on a page. Although absolute positioning lets you specify where an element should appear, it is still relative to any parent elements on the page. 
+            </p>
+            <p>
+                In some cases, you want to carefully control web page element overlap. The z-index style property lets you arrange elements in a stack. z-index refers to a third dimension (z) that points into the computer screen in addition to the two dimensions that go across (x) and down (y). The z-index property sets a style rule's relative z-index in numbers. The z-index property only matters for other style rules in a style sheet, so setting it for a single rule is pointless. Without a z-index, an element is assumed to have a value of 0 compared to others. Page elements are placed using the conceptual current line, an invisible line. This line affects page flow as elements are arranged next to each other. Page text flow is part of element flow. Controlling text flow around other elements like images is crucial when mixing text with them. The float property controls text flow around an element. Set it left or right. These values determine element placement relative to flowing text. Setting an image's float property to left positions it left of flowing text. The clear property can be set to none, left, right, or both to prevent text from flowing next to an element. The overflow property handles overflow text, which doesn't fit in an element's rectangular area due to small width and height.
+            </p>
+            
+
+            <br>
+        </div>
+        <div id="lesson11"></div>
+            <h2>
+                Lesson 11: Using CSS to Do More with Lists, Text, and Navigation
+            </h2>
+            <h3>
+                What You'll Learn in this Lesson
+            </h3>
+            <ul>
+                <li>How the CSS box model affects lists</li>
+                <li>How to customize the list item indicator</li>
+                <li>How to use list items and CSS to create an image map</li>
+                <li>How navigation lists differ from regular lists</li>
+                <li>How to create vertical navigation with CSS</li>
+                <li>How to create horizontal navigation with CSS</li>
+            </ul>
+
+            <p>
+                List-style-image, list-style-position, and list-style-type are list-related styles. These styles control list structure and items, but margin, padding, color, and background-color styles can customize list displays. List-style-position defaults to outside. This placement places bullets, numbers, and other indicators to the left of the text, outside the &lt;li>&lt;/li> tag pair. Text that wraps within a list item stays flush with its left border. With list-style-position inside, the indicators are within the &lt;li>&lt;/li> tag pair's box. After indenting the list item indicators, the text wraps beneath them. Instead of cutting an image into pieces, linking them, and stitching them back together in HTML, image maps let you define an area and link to it. You can also make an image map from valid HTML and CSS. 
+            </p>
+            <p>
+                Using lists to create navigation elements means using CSS to display content as website visitors expect it to look, not just bulleted or numbered lists. Although a set of navigation elements is essentially a list of links, they are usually displayed to encourage user interaction. Using pure CSS to create navigation from list elements creates a more adaptive, search engine-friendly, and accessible display for all devices. Vertical navigation may be used for primary or secondary navigation depending on your site architecture, including your display template and information categorization. Use the block value of the display property instead of the inline value for both the &lt;ul> and &lt;li> elements to create horizontal navigation using HTML list elements. 
+            </p>
+            
+
+            <br>
+        </div>
+        <div id="boxmodel"></div>
+            <h2>
+                <a href="#lesson10" >CSS Box Model</a>
+            </h2>
+            <p>
+                The box model describes how every HTML block-level elements are displayed based on how a border, padding, and margin are applied. A margin is the area outside the element of a box model, border surrounds the element on the outer edge of the padding, and the padding exists around the content and inherits the background color of the content itself.
+            </p>
+            
+
+            <br>
+        </div>
+        
+    </main>
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW-17 Yifan</p>
+    </footer>
+</body>
+</html>
