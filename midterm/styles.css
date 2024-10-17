@@ -8,6 +8,13 @@ Keep these two:
 #F7FFF7 light color for fonts on a dark background
 
 Add your colors here...
+https://coolors.co/0d1b1e-7798ab-c3dbc5-FFFDF8
+0d1b1e - Rich black
+7798ab - Air superiority blue
+c3dbc5 - Tea green
+FFFDF8 - Baby powder
+
+
 */
 
 
@@ -24,7 +31,7 @@ html {
     color: #343434;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Geologica, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.5;
   }
@@ -93,7 +100,9 @@ html {
   ------------------------------------*/
   header {
     /* background: ; */
+    background-color: #0d1b1e;
     /* color: ; */
+    color: #FFFDF8
   }
   
   
@@ -101,6 +110,8 @@ html {
   ------------------------------------*/
   .projects {
     /* background: ; */
+    background-color: #c3dbc5;
+    color: #0d1b1e;
   }
   .projects a {
     /* color: ; */
@@ -127,8 +138,10 @@ html {
   ------------------------------------*/
   .education {
     /* background-color: ; */
+    background-color: #7798ab;
     background-position: top right;
     padding-bottom: 100px;
+    color:#FFFDF8;
   }
   .education p {
     width: 60%;
@@ -139,16 +152,22 @@ html {
   ------------------------------------*/
   footer {
     /* background: ; */
+    background-color: #343434;
     /* color: ; */
+    color: #F7FFF7 ;
   }
   .contact-list {
     list-style-type: none;
     padding: 0;
   }
-  .contact-list a {
+  .contact-list a{
+    text-decoration: none;
     padding: 15px;
     display: inline-block;
-    /* color: ; */
+    color:#F7FFF7
+  }
+  .contact-list a:hover,a:active {
+    color:#aaaaaa
   }
 
 
