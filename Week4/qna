@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Questions about HTML, CSS, and JavaScript</title>
+</head>
+<body>
+    <h1>Commonly Asked Questions about HTML, CSS, and JavaScript</h1>
+    <ol>
+        <li>
+            <strong>What does HTML stand for?</strong>
+            <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages.</p>
+        </li>
+        <li>
+            <strong>What is the purpose of the &lt;head&gt; section in an HTML document?</strong>
+            <p>The &lt;head&gt; section contains metadata about the document, such as the title, links to stylesheets, and scripts. It is not displayed directly on the page.</p>
+        </li>
+        <li>
+            <strong>How do you create a hyperlink in HTML?</strong>
+            <p>You can create a hyperlink using the &lt;a&gt; tag. For example: &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;.</p>
+        </li>
+        <li>
+            <strong>What does CSS stand for, and what is its purpose?</strong>
+            <p>CSS stands for Cascading Style Sheets. It is used to style HTML elements, controlling layout, colors, fonts, and overall presentation of a web page.</p>
+        </li>
+        <li>
+            <strong>How can you apply CSS to an HTML document?</strong>
+            <p>CSS can be applied in three ways: inline styles using the style attribute, internal styles within a &lt;style&gt; tag in the &lt;head&gt;, or external styles using a linked .css file with the &lt;link&gt; tag.</p>
+        </li>
+        <li>
+            <strong>What is the box model in CSS?</strong>
+            <p>The box model describes the structure of elements on a web page, consisting of margins, borders, padding, and the content area. It determines how elements are sized and spaced.</p>
+        </li>
+        <li>
+            <strong>What is JavaScript, and how is it used?</strong>
+            <p>JavaScript is a programming language used to create interactive and dynamic content on web pages. It allows developers to manipulate HTML and CSS, respond to user events, and handle data.</p>
+        </li>
+        <li>
+            <strong>How do you declare a variable in JavaScript?</strong>
+            <p>You can declare a variable using var, let, or const. For example: let name = "John";.</p>
+        </li>
+        <li>
+            <strong>What is the difference between == and === in JavaScript?</strong>
+            <p>== checks for value equality with type coercion, while === checks for both value and type equality (strict equality).</p>
+        </li>
+        <li>
+            <strong>What is the Document Object Model (DOM)?</strong>
+            <p>The DOM is a programming interface that represents the structure of a web document. It allows JavaScript to interact with HTML and XML documents, enabling dynamic changes to the content and structure of web pages.</p>
+        </li>
+    </ol>
+</body>
+</html>

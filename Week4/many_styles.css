@@ -1,0 +1,89 @@
+body {
+    /*  
+        margin:_ _ _ _ [4 numbers]-Top, Right, Bottom, Left
+        margin:_ _ [2 numbers]-Top & bottom, Right & Left
+    */
+    margin: 0 auto; /* 0 margin for top & bottom, auto for right and left */
+    max-width: 600px;
+    font-size: 20px;
+    font-family:'Sofadi One', 'Protest Guerrilla', Courier;
+   /* background-image: url("obamung.png"); */
+}
+
+h1{
+    font-family: 'Protest Guerrilla', cursive;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+p{
+    text-align: justify;
+}
+
+pre {
+    background-color:antiquewhite;
+    font-family: monospace;
+    padding-top: 20px;
+}
+
+code{
+    color: rgb(5, 182, 5);
+}
+
+a{
+    text-decoration: none;
+}
+
+ol{
+    list-style-type: none;
+}
+
+ol li{
+    padding: 5px 0;
+    /* background-color: #aeaeae; */
+}
+
+ol a{
+    text-decoration: none;
+    display:block;
+    background-color: #e3e3e3; 
+    padding: 1% 2%;
+}
+
+
+
+ol a:hover{
+    color: rgb(74, 74, 74);
+    background-color: rgb(184, 184, 184);
+}
+
+ol a:visited{
+    color: rgb(158, 158, 158);
+}
+
+.l337_coder {
+    background-color: black;
+}
+
+.emoji {
+    font-size: 500%;
+    text-align: center;
+}
+
+.spacer{
+    padding: 100px;
+}
+
+.top{
+    position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgb(194, 194, 194);
+            padding: 10px;
+            border: 1px solid #454545;
+            color: #797979;
+}
+
+.top a:visited{
+    color: #797979;
+}
