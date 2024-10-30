@@ -1,0 +1,10 @@
+body {
+    margin: 0 auto; /* 0 margin for top & bottom, auto for right and left */
+    max-width: 600px;
+}
+
+footer p {
+    color: rgb(160, 160, 160); 
+    text-align: center; 
+    padding: 5em;
+}

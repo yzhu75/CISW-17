@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 9 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 9 Notes
+         10/14/2024 -->
+    <style>
+        body{
+            font-size: 18px;
+            line-height: 1.5em;
+            background-color: #f3f3f3;
+            color: #212427;
+            font-family: Helvetica, sans-serif;
+        }
+
+        
+
+        h1{
+            text-align: center;
+        }
+
+        h1, h2{
+            font-weight: 400;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+        a{
+            text-decoration: none;
+        }
+        @media screen and (min-width: 750px) {
+            h1{
+                font-size: 1.5em;
+            }
+            h2{
+                font-size: 1.25em;
+            }
+        }
+        @media screen and (max-width: 749px) {
+            body{
+                line-height: 1.2em;
+            }
+            h1{
+                font-size: 1.25em;
+            }
+            h2{
+                font-size: 1.1em;
+            }
+        }
+    </style>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+<body class="w3-light_gray">
+    <header class="w3-container">
+        <div class="w3-content">
+            <h1>Week 9 Notes</h1>
+        </div>      
+    </header>
+    <main>
+        <div id="lesson19" class="w3-container w3-margin">
+            <div class="w3-content" style="max-width: 960px;">
+                <h2 class="w3-blue-grey">
+                    Lesson 19: Understanding Dynamic Websites and HTML5 Applications
+                </h2>
+                <h3>
+                    What You'll Learn in this Lesson
+                </h3>
+                <ul class="w3-ul w3-border">
+                    <li>How to conceptualize different types of dynamic content</li>
+                    <li>How to include JavaScript in your HTML</li>
+                    <li>How to display randomized text with JavaScript</li>
+                    <li>How to change images by using JavaScript and user events</li>
+                    <li>How to begin thinking ahead to putting all the pieces together to create HTML5 applications</li>
+                  </ul>
+                <p>
+                    Web development involves server and client-side scripting, both are forms of computer programming. Server-side scripting is a process where scripts run on a web server, sending results to the browser. JavaScript code can be stored in external files or directly in HTML files, with the browser recognizing its existence through the tag pair. &lt;script> tags are placed between &lt;head> tags to provide JavaScript functions or other information for the rest of the page to use. JavaScript allows you to display unique content on each page load, such as interesting text or images. JavaScript client-side interactivity involves manipulating the Document Object Model (DOM), an invisible structure for documents, not an HTML structure or semantic formatting. 
+                </p>
+                <p>
+                    The document is the overall container object, and any container created within it with an assigned ID can be referenced by that ID. Unobtrusive JavaScript is a method for writing JavaScript scripts, not necessarily for interactive web pages, but best practices suggest considering it. Small images display smaller versions of large images, popular in online catalogs for alternative product views. Large images can be unwieldy, so small gallery views are preferred. HTML5 extends beyond basic markup to include APIs for complex applications, including native audio and video elements and built-in offline storage mechanisms, allowing full-blown applications to run without a network connection. 
+                </p>
+                <h3>
+                    JavaScript Comments
+                </h3>
+                <p>
+                    Use double slashes <code class="w3-codespan">//</code> to start a single line comment. Any text between // and the end of the line will be ignored 
+                    <br>
+                    <code class="w3-codespan">// THIS IS A COMMENT</code>
+                </p>
+                <p>
+                    Start a multi-line comment with <code class="w3-codespan">/*</code> and end it with <code class="w3-codespan">*/</code>
+                    <br>
+                    <code class="w3-codespan">
+                        /* <br>
+                        multiple lines <br>
+                        of <br>
+                        Comments<br>
+                        */
+                    </code>
+                </p>
+                <br>
+            </div>
+        </div>
+        <div id="lesson20" class="w3-container w3-margin">
+            <div class="w3-content" style="max-width: 960px;">
+                <h2 class="w3-blue-grey">
+                    Lesson 20: Getting Started with JavaScript Programming
+                </h2>
+                <h3>
+                    What You'll Learn in this Lesson
+                </h3>
+                <ul class="w3-ul w3-border">
+                    <li>How and why to organize scripts using functions</li>
+                    <li>What objects are and how JavaScript uses them</li>
+                    <li>How JavaScript can respond to events</li>
+                    <li>How and when to use conditional statements and loops</li>
+                    <li>How browsers execute scripts in the proper order</li>
+                    <li>Basic syntax rules for avoiding JavaScript errors</li>
+                    <li>What JSON is and how it can be used</li>
+                  </ul>
+    
+                <p>
+                    A statement is a single action code section in a JavaScript program, serving as the fundamental units of the program. A statement in JavaScript can be broken across multiple lines or include multiple statements in a single line. A semicolon marks the end, but can be omitted if starting a new line. A function is a unit of JavaScript statements, used in a function call. A function can be defined by an expression enclosed in parentheses and can also return a value to a waiting variable. JavaScript variables are containers that can store numbers, text strings, or other values. JavaScript supports objects, which store data like variables. These objects provide predetermined actions, like document.write, and store properties like name, address, and telephone number for specific purposes. 
+                </p>
+                <p>
+                    JavaScript is case sensitive, meaning lowercase and capital letters cannot be used interchangeably. Keywords are always lowercase, built-in objects are capitalized, DOM object names are usually lowercase, and uppercase letters start all words except the first one. Variable names in JavaScript can be uppercase or lowercase, with the same name being used each time. Variable names should not be reserved words, including if and for. JavaScript comments provide brief documentation within a script, useful for understanding it after a break. They can be started with two slashes or in the middle of a line, and support C-style comments. To write valid JavaScript, use comments liberally, use semicolons at the end of each statement, use external JavaScript files, avoid being browser-specific, and keep JavaScript optional. This strategy, known as progressive enhancement, ensures easier reading and debugging, faster page loading, and reusable modular scripts.
+                </p>
+                <h3>
+                    JavaScript Best Practices
+                </h3>
+                <ul class="w3-ul">
+                    <li>Use comments liberally</li>
+                    <li>Use a semicolon at the end of each statement and use only one statement per line</li>
+                    <li>Use external JavaScript files whenever possible</li>
+                    <li> Avoid being browser specific</li>
+                    <li>Keep JavaScript optional</li>
+                  </ul>
+                <br>
+            </div>
+        </div>
+        <div id="lesson21" class="w3-container w3-margin">
+            <div class="w3-content " style="max-width: 960px;">
+                <h2 class="w3-blue-grey">
+                    Lesson 21: Working with the Document Object Model (DOM)
+                </h2>
+                <h3>
+                    What You'll Learn in this Lesson
+                </h3>
+                <ul class="w3-ul w3-border">
+                    <li>How the W3C DOM standard makes dynamic pages easier to control</li>
+                    <li>The basics of the standard DOM objects: window, document, history, and location</li>
+                    <li>How to work with DOM nodes, parents, children, and siblings</li>
+                    <li>How to access and use the properties of DOM nodes</li>
+                    <li>How to access and use DOM node methods</li>
+                    <li>How to control element positioning with JavaScript</li>
+                    <li>How to hide and show elements with JavaScript</li>
+                    <li>How to use JavaScript to add and modify text within a page</li>
+                </ul>
+    
+                <p>
+                    JavaScript allows client-side scripts to dynamically manipulate web browser and documents, using a treelike structure within the DOM, without requiring server requests. The window object represents a browser window, with distinct instances of the browser. Multiple windows open simultaneously, each with its own document. JavaScript references the currently in focus window. The history object is a property of the window object that contains information about previous and next visited locations, including methods to access them. The location object is a child of the window object, storing the URL loaded in the browser window, as demonstrated in a JavaScript statement.
+                </p>
+                <p>
+                    The modern DOM organizes DOM objects under the document object for every element of a page, enhancing understanding of the organization of important DOM objects. In the DOM, each element is a node, with relationships between nodes represented by lines. Nodes can have parents and children, using the same terminology as JavaScript. Text nodes work differently, with paragraph text being a child of the &lt;p> object. The DOM organization of objects is known as siblings, which refer to objects with the same parent, indicating they are at the same level in the DOM object tree. The DOM structure allows for control over elements in web pages, such as paragraphs and images. Prior to W3C DOM and CSS2, only layers were repositioned. Layers can be created using container elements. A script can dynamically modify a heading's content within a web page by assigning its object to the variable heading1, which contains its text and the firstChild property. 
+                </p>
+                <br>
+                <h3>
+                    Common DOCUMENT Object Properties
+                </h3>
+                <table class="w3-table-all ">
+                    <tr>
+                        <td><code class="w3-codespan">document.URL</code></td>
+                        <td>Specifies the document's URL, which cannot be altered by the user or the code.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.title</code></td>
+                        <td>Refers to the title of the current page, defined by the HTML <code class="w3-codespan">&lt;title></code> tag. You can change the value of this property.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.referrer</code></td>
+                        <td>Returns the URL of the page the user was viewing before the current page—usually the page with a link to the current page. As with <code class="w3-codespan">document.URL</code>, you cannot change the value of <code class="w3-codespan">document.referrer</code>. Note that <code class="w3-codespan">document.referrer</code> will be blank if a user has directly accessed a given URL directly.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.lastModified</code></td>
+                        <td>Indicates the date the document was last modified. This date is sent from the server along with the page.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.cookie</code></td>
+                        <td>Enables you to read or set a cookie used within the document.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.images</code></td>
+                        <td>Returns a collection of images used in the document.</td>
+                    </tr>
+                </table>
+                <br>
+                <h3>
+                    Common DOCUMENT Object Methods
+                </h3>
+                <table class="w3-table-all ">
+                    <tr>
+                        <td><code class="w3-codespan">document.getElementById()</code></td>
+                        <td> Returns the element with the specified ID.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.getElementsByClassName()</code></td>
+                        <td>Returns an array-like object of elements with the specified class.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.getElementsByTagName()</code></td>
+                        <td>Returns an array-like object of elements with the specified tag name.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.querySelector()</code></td>
+                        <td>Returns the first element that matches the specified CSS selector.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.querySelectorAll()</code></td>
+                        <td>Returns a list of elements that match the specified CSS selector.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.createElement()</code></td>
+                        <td>Creates an element with the specified tag name.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.createTextNode()</code></td>
+                        <td>Creates a text node with the specified text.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.write()</code></td>
+                        <td>Writes content directly to the document (rarely recommended).</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.open()</code></td>
+                        <td>Opens a new document stream.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.close()</code></td>
+                        <td>Closes the document stream.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.adoptNode()</code></td>
+                        <td>Adopts a node from another document.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">document.importNode()</code></td>
+                        <td>Imports a node from another document.</td>
+                    </tr>
+                </table>
+                <br>
+                <h3>
+                    Basic Node Properties
+                </h3>
+                <table class="w3-table-all ">
+                    <tr>
+                        <td><code class="w3-codespan">nodeName</code></td>
+                        <td>The name of the node (not the ID). For nodes based on HTML tags, such as <code class="w3-codespan">&lt;p></code> or <code class="w3-codespan">&lt;body></code>, the name is the tag name: <code class="w3-codespan">p</code> or <code class="w3-codespan">body</code>. For the document node, the name is a special code: <code class="w3-codespan">#document</code>. Similarly, text nodes have the name <code class="w3-codespan">#text</code>. This is a read-only value.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">nodeType</code></td>
+                        <td>An integer describing the node’s type, such as <code class="w3-codespan">1</code> for normal HTML tags, <code class="w3-codespan">3</code> for text nodes, and <code class="w3-codespan">9</code> for the document node. This is a read-only value.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">nodeValue</code></td>
+                        <td>The actual text contained within a text node. This property returns <code class="w3-codespan">null</code> for other types of nodes.</td>
+                    </tr>
+                    <tr>
+                        <td><code class="w3-codespan">innerHTML</code></td>
+                        <td>The HTML content of any node. You can assign a value including HTML tags to this property and change the DOM child objects for a node dynamically.</td>
+                    </tr>
+                    
+                </table>
+                <br>
+            </div>
+        </div>
+        <div id="resources" class="w3-container w3-margin">
+            <div class="w3-content" style="max-width: 500px;">
+                <h1>
+                    More Resources
+                </h1>
+                <ul class="w3-ul w3-hoverable w3-blue-grey" >
+                    <li><a href="https://www.w3schools.com/jsref/default.asp" target="_blank">Complete JavaScript and HTML DOM References</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN JavaScript References</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics" target="_blank">MDN Javascript basic tutorials</a></li>
+                    <li><a href="https://js.institute/" target="_blank">Read more about JavaScript here</a></li>
+                  </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW-17 Yifan</p>
+    </footer>
+</body>
+</html>
