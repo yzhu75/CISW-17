@@ -6,6 +6,10 @@
     <title>Rainbow</title>
     <!-- Yifan Zhu
          8/28/2024 -->
+    
+</head>
+<body>
+    <h1>Rainbow</h1>
     <script>
         const colors = [
             "red",
@@ -25,14 +29,12 @@
         // Math.random() Gives a number between 0 and 1
         // Math.floor() rounds down (ceil rounds up)
         let x = Math.floor(Math.random() * 6);
+        
         //Display the chosen color
 
-        console.log("You chose " + colors[x])
+        console.log("You chose " + colors[x]);
 
         document.body.style.background = colors[x];
     </script>
-</head>
-<body>
-    <h1>Rainbow</h1>
 </body>
 </html>
