@@ -29,11 +29,7 @@ const birthDate = Months[bd_month] + " " + bd_day + " " + bd_year;
 
 const imgElement = document.getElementById('emoji');
 
-confetti({
-    particleCount: 100,
-    startVelocity: 30,
-    spread: 360,
-  });
+
 
 birthdayMsg = "Message";
 
@@ -45,7 +41,11 @@ if ( month == bd_month && day == bd_day ) {
     imgElement.src = 'happy.webp';
     const sound = new Audio('sound.mp3');
     sound.play();
-    confetti(); 
+    confetti({
+        particleCount: 100,
+        startVelocity: 50,
+        spread: 200,
+      }); 
 } else {
     message = "It's not your birthday yet."
     birthdayMsg = "It's not your birthday yet."
