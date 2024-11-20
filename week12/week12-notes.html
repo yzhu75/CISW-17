@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 12 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 12 Notes
+         11/18/2024 -->
+    <style>
+        body{
+            font-size: 18px;
+            line-height: 1.5em;
+            background-color: #f3f3f3;
+            color: #212427;
+            font-family: Helvetica, sans-serif;
+        }
+
+        
+
+        h1{
+            text-align: center;
+        }
+
+        h1, h2{
+            font-weight: 400;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+        a.none{
+            text-decoration: none;
+        }
+        a.link{
+            color:crimson;
+        }
+        
+
+        @media screen and (min-width: 750px) {
+            h1{
+                font-size: 1.5em;
+            }
+            h2{
+                font-size: 1.25em;
+            }
+
+            #small_table{
+                width: 30%;
+            }
+            #medium_table{
+                width: 60%;
+            }
+        }
+        @media screen and (max-width: 749px) {
+            body{
+                line-height: 1.2em;
+            }
+            h1{
+                font-size: 1.25em;
+            }
+            h2{
+                font-size: 1.1em;
+            }
+            #small_table, #medium_table{
+                width: 95%;
+            }
+        }
+    </style>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+<body class="w3-light_gray">
+    <header class="w3-container">
+        <div class="w3-content">
+            <h1>Week 12 Notes</h1>
+        </div>      
+    </header>
+    <main>
+        <div id="lesson25" class="w3-container w3-margin">
+            <div class="w3-content" style="max-width: 960px;">
+                <h1 class="w3-blue-grey">
+                    Lesson 25: JavaScript Best Practices
+                </h1>
+                <h3>
+                    What You'll Learn in this Lesson
+                </h3>
+                <ul class="w3-ul w3-border ">
+                    <li>Best practices for creating unobtrusive scripts</li>
+                    <li>The importance of separating content, presentation, and behavior</li>
+                    <li>The importance of following web standards to create cross-browser scripts</li>
+                    <li>How to read and display browser information</li>
+                    <li>How to use feature sensing to avoid errors</li>
+                    <li>How to support older, less compliant browser versions</li>
+                    <li>How to support non-JavaScript browsers</li>
+                    </ul>
+                <h4 class="w3-blue-grey w3-padding-small">Scripting Best Practices</h4>
+                <p>
+                    As you develop complex scripts, it's crucial to follow best practices for JavaScript. These guidelines ensure code is readable, easy to maintain, follows standards, works even without JavaScript, adapts easily to different sites, and users appreciate the ease of use and fixability. These best practices are essential for creating AJAX web applications and enhancing pages with simple scripts.
+                </p>
+                <p>
+                    Avoid overusing JavaScript in your website design. As HTML5 and CSS3 mature, there's less need for JavaScript for enhanced interactions. Instead, use CSS for visual effects, familiarity with user interfaces, and compatibility with outdated computers and browsers. Avoid using JavaScript for search engine page rank and mobile-friendly design, as it may penalize your site.
+                </p>
+                <h4 class="w3-blue-grey w3-padding-small">Reading Browser Information</h4>
+                 <p>
+                    JavaScript's navigator object allows scripts to determine if to use JavaScript elements based on the user's browser, such as implementing code specifically for older browsers. The navigator object, which is not part of the DOM, can be directly accessed and contains various properties that provide information about the browser.
+                 </p>
+                 <table class="w3-table-all w3-small"  id="medium_table">
+                    <tr>
+                        <td>
+                            <code class="w3-codespan">navigator.appCodeName</code>
+                        </td>
+                        <td>
+                            The property specifies the browser's internal code name, like Mozilla, which all modern browsers will return, regardless of whether they are a Mozilla-based browser or not.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="w3-codespan">navigator.appName</code>
+                        </td>
+                        <td>
+                            Specifies the browser’s name, such as Firefox or Microsoft Edge.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="w3-codespan">navigator.appVersion</code>
+                        </td>
+                        <td>
+                            Specifies the version of the browser being used—for example, 5.0 (Windows).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="w3-codespan">navigator.userAgent</code>
+                        </td>
+                        <td>
+                            It specifies the user agent header, which the browser delivers to the web server when requesting a page. Example: <code class="w3-codespan">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:59.0) Gecko/20100101 Firefox/59.0.</code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="w3-codespan">navigator.language</code>
+                        </td>
+                        <td>
+                            Specifies browser language (English or Spanish). Codes like en-US for U.S. English are preserved.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code class="w3-codespan">navigator.platform</code>
+                        </td>
+                        <td>
+                            Current browser platform. Short strings include Linux i686, Win32, and MacIntel. This allows you to enable platform-specific capabilities like Windows Internet Explorer ActiveX components.
+                        </td>
+                    </tr>
+                  </table>
+                  <h4 class="w3-blue-grey w3-padding-small">Cross-Browser Scripting</h4>
+                  <p>
+                    Detecting different browser versions can be simplified by writing cross-browser scripts without referring to the navigator object. This is better as browser-checking code is often confused by new browsers. Feature sensing, a better approach, checks for specific features, like document.getElementById, rather than a specific browser.
+                  </p>
+                  <p>
+                    The navigator object is useful in situations where a complex script fails in multiple browsers due to a browser bug or feature difference. To fix this, double-check for bugs in your code, use feature sensing to check for missing features in one browser, and use the navigator object to detect a specific browser and substitute code that works there.
+                  </p>
+                  <h4 class="w3-blue-grey w3-padding-small">Creating an Unobtrusive Script</h4>
+                  <p>Unobtrusive scripting involves creating a JavaScript script that enhances a page's functionality without compromising its performance in older browsers, such as creating graphic check boxes as an alternative to regular check boxes.</p>
+                  <br>
+                  <h3 class="w3-blue-grey w3-padding-small" >Reflection on the Lesson</h3>
+                  <p>
+                    I think this lesson provides some fundamental ideas for creating high-quality JavaScript applications by focusing on best practices that ensure functionality, usability, and maintainability. The concepts presented in this chapter puts emphasis how crucial it is to create unobtrusive scripts that improve user experience while keeping the main functions of the site intact, making sure they work well on various browsers and devices. The practice of separating content, presentation, and behavior, helps ensure that the code is clean and maintainable, which makes it easier to update and manage each aspect independently. The focus on progressive enhancement and unobtrusive scripting helps encourage the creation of adaptable code that works well across different environments.
+                  </p>
+            </div>
+            <div id="lesson26" class="w3-container w3-margin">
+                <div class="w3-content" style="max-width: 960px;">
+                    <h1 class="w3-blue-grey">
+                        Lesson 26: Using Third-Party JavaScript Libraries and Frameworks
+                    </h1>
+                    <h3>
+                        What You'll Learn in this Lesson
+                    </h3>
+                    <ul class="w3-ul w3-border ">
+                        <li>Why you might use a third-party JavaScript library or framework</li>
+                        <li>The differences between libraries and frameworks</li>
+                        <li>How and when you might use Angular, jQuery, React, and other third-party libraries</li>
+                        <li>How to download and use a popular third-party JavaScript library in your applications</li>
+                        <li>The benefits of JavaScript frameworks</li>
+                        </ul>
+                    <p>
+                        Third-party JavaScript libraries offer advantages over writing your own code, such as avoiding reinventing the wheel for common tasks, implementing cross-browser scripting, and sophisticated user interface elements without needing JavaScript expertise. This lesson introduces popular third-party libraries and JavaScript frameworks, providing a structure for development.
+                    </p>
+                    <h4 class="w3-blue-grey w3-padding-small">Using Third-Party JavaScript Libraries</h4>
+                    <p>
+                        JavaScript's built-in Math and Date functions are often used, but third-party libraries can be used to perform complex tasks with minimal code. However, there are common objections to using third-party libraries, such as not fully understanding the code's workings and the large amount of code that the browser downloads.
+                    </p>
+                    <p>
+                        It is essential to understand the code behind the scenes and consider the extraneous code if bandwidth limitations or features are disproportionately large. For example, if a library requires a 1MB load for a single function, it may be worth forking or finding a smaller library with less overhead.
+                    </p>
+                    <h4 class="w3-blue-grey w3-padding-small">jQuery</h4>
+                    <p>
+                        jQuery, introduced in 2006, is a powerful cross-browser JavaScript library that simplifies DOM manipulation and productivity. It is used in many JavaScript frameworks. The current version is 3.3.1, and jQuery UI offers advanced user interface extensions for rapid development. jQuery Mobile is a touch-optimized mobile framework for responsive apps and websites.
+                    </p>
+                    <h4 class="w3-blue-grey w3-padding-small">Adding JavaScript Effects by Using a Third-Party Library</h4>
+                    <p>
+                        This example demonstrates how to incorporate script.aculo.us and Prototype into an HTML document using the Google CDN.
+                    </p>
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;script <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"><br<>
+                        &lt;/script><br>
+                        &lt;script<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"><br>
+                        &lt;/script><br>
+                    </div>
+                    <p>
+                        Including library functions in the &lt;head> section of a document allows them to be accessible to other scripts or event handlers throughout the page. Ideally, libraries should be placed at the end of the document, but can be placed below all HTML. 
+                    </p>
+                    <p>
+                        To activate the effects, include JavaScript in the &lt;p> tag with the id testarea.
+                    </p>
+                    <div class="w3-code htmlHigh notranslate">
+                        &lt;button onclick="new Effect.Fade($('testarea'))">Fade Out&lt;/button>
+                    </div>
+                    <p>
+                        The code utilizes the $ function in Prototype to obtain the element with ID testarea and then passes it to the Effect.Fade function in script.aculo.us.
+                    </p>
+                    <h4 class="w3-blue-grey w3-padding-small">Using JavaScript Frameworks</h4>
+                    <p>
+                        JavaScript libraries are smaller, pre-made code for custom architecture, while frameworks are larger, more complex, and impose an architectural pattern like the model-view-controller (MVC) pattern.
+                    </p>
+                    <table class="w3-table-all w3-small"  id="medium_table">
+                        <tr>
+                            <td>
+                                Model
+                            </td>
+                            <td>
+                                 - The central component, despite being listed first, holds application data, business rules, functions, and other logical elements.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                View
+                            </td>
+                            <td>
+                                 - Requests information from the model to show to the user
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Controller
+                            </td>
+                            <td>
+                                 - Sends information to the model for processing through user interactions
+                            </td>
+                        </tr>
+                      </table>
+                      <p>
+                        In a web-based application, the user interacts with a controller that manipulates the underlying model, updating the view in the web browser. In traditional web-based applications, both the model and controller components are on the back end, invoked through form elements or interactions. In JavaScript-based MVC applications, all three components can be on the client side, allowing users to interact with data stored and manipulated within the front end, or using AJAX requests.
+                      </p>
+                      <p>
+                        If you're making a mostly read-only website and just using some JavaScript or jQuery for display, a framework might be too much. If you start thinking about adding user interactivity to your website, consider setting up a framework to help with that. Here are some popular JavaScript frameworks that are great starting points for exploration:
+                      </p>
+                      <ul class="w3-ul">
+                        <li class="w3-padding-small"><strong>Angular </strong><a class="link" href="https://angular.io" target="_blank">(https://angular.io)</a> - This framework is really powerful and flexible, but it has a tough learning curve. It has a really active user community that helps new developers get to know the framework. It's a total revamp of the well-known original framework <a class="link" href="https://angularjs.org/" target="_blank">(https://angularjs.org/)</a></li>
+                        <li class="w3-padding-small"><strong>Backbone.js </strong><a class="link" href="https://backbonejs.org/" target="_blank">(https://backbonejs.org)</a> - This framework has been around for quite some time (relatively speaking) and served as the inspiration for many other frameworks. It enables a new developer to get started quickly, but the downside of that, for some, is that the applications will contain a lot of unused templating code.</li>
+                        <li class="w3-padding-small"><strong>Ember </strong><a class="link" href="https://emberjs.com/" target="_blank">(https://emberjs.com)</a> - Ember helps new developers jump in fast, just like Backbone.js. Some might think it’s “too magical,” but Ember’s focus on common programming practices can really help new developers.</li>
+                        <li class="w3-padding-small"><strong>Knockout </strong><a class="link" href="https://knockoutjs.com/" target="_blank">(https://knockoutjs.com)</a> - Knockout isn't as popular as the other frameworks mentioned, but it still offers a solid alternative and has some great tutorials for beginners.</li>
+                        <li class="w3-padding-small"><strong>React </strong><a class="link" href="https://react.dev/" target="_blank">(https://react.dev)</a> - People argue about whether React is a library or a framework, but it’s definitely a popular tool for making interactive web pages and apps, and it keeps getting more popular.</li>
+                      </ul>
+                      <h3 class="w3-blue-grey w3-padding-small" >Reflection on the Lesson</h3>
+                  <p>
+                    This chapter introduces third-arty JS libraries and frameworks that developers could use to streamline web development. I think that knowing how to use libraries, such as jQuery could help with simplifying comples tasks like event handling and DOM manipulations, while frameworks could provide robust structures for building web applications. It also puts emphasis on leveraging pre-built code and ensuring cross compatibility in order to improve efficiency and usability. Overall the chapter really showcases how these tools can enhance productivity and maintainability of code.
+                  </p>
+                  <p>
+                    These libraries and frameworks could be used to quickly add advanced features by using pre-built functions. They could also be applied to streamline DOM manipulation through tasks such as selecting element, handling events, and animations.
+                  </p>
+                </div>
+                
+
+        </div>
+        <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+
+        <script>
+            w3CodeColor();
+        </script>
+    </main>
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW-17 Yifan</p>
+    </footer>
+</body>
+</html>
