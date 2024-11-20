@@ -3,7 +3,7 @@ const month = today.getMonth();
 const day = today.getDate();
 const year = today.getFullYear();
 
-const bday = new Date(1997, 10, 12);
+const bday = new Date(2001, 9, 11);
 const bd_month = bday.getMonth();
 const bd_day = bday.getDate();
 const bd_year = bday.getFullYear();
@@ -35,7 +35,6 @@ birthdayMsg = "Message";
 
 
 if ( month == bd_month && day == bd_day ) {
-    celebrate = false;
     message = "Happy Birthday!"
     birthdayMsg = "Happy Birthday!"
     imgElement.src = 'happy.webp';
@@ -45,7 +44,7 @@ if ( month == bd_month && day == bd_day ) {
         particleCount: 100,
         startVelocity: 50,
         spread: 200,
-      }); 
+    }); 
 } else {
     message = "It's not your birthday yet."
     birthdayMsg = "It's not your birthday yet."
