@@ -44,6 +44,7 @@ function reload(){
     window.location.reload();
     //Clear the bill total
     form.billTotal.value = "";
+    form.split.value = "0";
 }
 
 submit.addEventListener("click", tipBig);
