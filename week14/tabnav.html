@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="tabnav.js" defer></script>
+    <title>Tabbed Navigation</title>
+    <!-- Yifan Zhu
+         Barebones Template
+         8/28/2024 -->
+</head>
+<body id ="body" class="w3-container show">
+    <header class="w3-center">
+        <h1>Tabbed Navigation</h1>
+    </header>
+    <main>
+        <div class="w3-bar w3-red w3-round-large"> <!-- Enter 4 buttons for sesasons -->
+            <button class="w3-bar-item w3-button tablinks" onclick="openSeason(event, 'winter')">Winter</button>
+            <button class="w3-bar-item w3-button tablinks" onclick="openSeason(event, 'spring')">Spring</button>
+            <button class="w3-bar-item w3-button tablinks" onclick="openSeason(event, 'summer')">Summer</button>
+            <button class="w3-bar-item w3-button tablinks current" onclick="openSeason(event, 'fall')">Fall</button>
+        </div>
+
+        <div class="w3-border w3-container w3-white w3-round-large">
+            <div id="winter" class="season" style="display: none;">
+                <h2>Winter</h2>
+                <p>Winter is like cold and stuff and it like snows in places that are very cold because the rain gets frozen into snow when it is falling from the clouds. Winter is nice, but not as good as fall tbh. The best part about winter is that it snows in places, and going to a ski resort and skiing during this time is very nice because you can ski with the snow falling and stuff. It also looks very nice when it snows, especially if you go to like a forest or mountain or something.</p>
+            </div>
+            <div id="spring" class="season" style="display: none;">
+                <h2>Spring</h2>
+                <p>Spring is when like the weather starts to get a little warmer and all the plants and stuff starts to grow again. Bears and stuff also like stop hibernating and stuff. Idk much about spring. All i'm familiar with it is that it like makes the plants green again, and all the bugs starts to come back out again because it is getting a little warmer and things. It is also wet for some reason, even in dryer places.</p>
+            </div>
+            <div id="summer" class="season" style="display: none;">
+                <h2>Summer</h2>
+                <p>Summer is when it starts to get like really hot in some places and stuff. If you are in like california or like arizona it will get to like 100 degrees and very hot. Beach time is very popular during this time i think. Summer is nice i guess. Its hot so you dont have to wear too many layers and stuff when you go outside, but its also too hot to not have the ac on, and that costs big moneys. It also gets too hot in your car sometimes and stuff so you have to bear the heat for like 50 minutes before it cools down inside the car.</p>
+            </div>
+            <div id="fall" class="season" style="display: block;">
+                <h2>Fall</h2>
+                <p>Fall starts to get a little colder. Some people call it autumn or something but i think its kinda stupid. Leaves turn brown and plants starts to die. Also right before christmas which is cool. Personally i think fall is like the best season ever, cause its not like too cold yet, but its also not so hot that it becomes very unbearable and stuff, especially when you are getting in your car in the middle of the day and it feels like an oven in there.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>CISW-17</p>
+    </footer>
+</body>
+</html>
