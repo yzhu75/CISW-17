@@ -7,7 +7,7 @@ let startOver = document.getElementById("startOver");
 let displayTotals  = document.getElementById("displayTotals");
 let split = document.forms.split;
 
-// The moeny variables 
+// The money variables 
 let billTotal = 0; // the amount of the bill
 let tipAmount = 0; // the amount of the tip
 let total = 0;     // the billTotal + the tipAmount
@@ -26,7 +26,7 @@ function tipBig(e){
 
     
 
-    bill.style.display = "none";
+    bill.style.display = "none"; 
 
     displayTotals.innerHTML += `The bill is $${billTotal.toFixed(2)}<br>`;
     displayTotals.innerHTML += `The tip is $${tipAmount.toFixed(2)}<br>`;

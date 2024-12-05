@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto; /* 0 margin for top & bottom, auto for right and left */
+    max-width: 600px;
+}
+
+footer p {
+    color: rgb(160, 160, 160); 
+    text-align: center; 
+    padding: 5em;
+}
+
+h1{
+    text-align: center;
+}
+
+hr {
+    border-top: 1px dotted darkslategrey;
+  }
+
+.darkmode {
+    background-color: rgb(36, 36, 36);
+    color:aliceblue
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
