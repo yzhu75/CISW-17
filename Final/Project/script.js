@@ -1,6 +1,7 @@
 
 
 
+
 function display(){
     awardee = document.form1.name.value;
     if  (awardee != "") {
