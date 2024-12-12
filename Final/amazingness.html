@@ -4,31 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Petit+Formal+Script&family=Playwrite+CA+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css"> 
-    <script src="script.js"></script>
-    <title>Certificate of Amazingness</title>
+    <script src="script.js" defer></script>
+    <title>Certificate of Amazing-ness</title>
     <!-- Yifan Zhu
          Barebones Template
          8/28/2024 -->
 </head>
-<body id ="body" class="w3-container show">
-    <header class="w3-center">
-        <h1>Certificate of Amazingness</h1>
+<body id ="body" class="w3-container show w3-theme-d4">
+    <header class="w3-container w3-center w3-padding-large">
+        <h1 class="petit-formal-script-regular">Certificate of Amazingness</h1>
     </header>
     <main>
         <br>
-        <form name="form1" id="form1" class="w3-container w3-card-4 w3-light-grey w3-padding">
-            <h1>Create your certificate</h1>
+        <form name="form1" id="form1" class="w3-container w3-card-4 w3-theme w3-padding w3-round-large" >     
+            <h1 class="kanit-light">Create your certificate</h1>
             <hr>
-            <p>Congratulations!</p>
-            <p>You are on your way to being an amazing front-end developer!</p>
-            <label for="name">Enter your name</label><br>
-            <input class="w3-input w3-border" type="text" id="name" name="name" size="50" value="hello"><br>
-            <input class="w3-input w3-border" type="button" onclick="display()" value="Make certificate">
-          </form> 
+            <div class="w3-panel w3-theme-d2 w3-round-large w3-padding-small w3-center kanit-regular">
+                <p class="kanit-regular-italic" >Congratulations!</p>
+                <p>You are on your way to being an amazing front-end developer.</p>
+                <h6>With every step you take, you are building the skills and creativity needed to craft beautiful, engaging, and impactful digital experiences. Your dedication and passion will not only shape your future but also inspire others and leave a lasting impression on the ever-evolving world of technology. Keep striving, learning, and growing—amazing achievements await you!</h6>
+                <br>
+                <h3 class="kanit-medium"> &#x2B0A; Get your complementary certificate below: &#x2B0B;</h3>
+            </div>
+            <div class="w3-panel w3-theme-d3 w3-round w3-padding form-input">
+                <label for="name" class="kanit-regular-italic"><h5>Enter your name:</h5></label>
+                <input class="w3-input w3-border w3-round-large" type="text" id="name" name="name" size="50" value="hello"><br>
+            </div>
+            <button class="w3-button w3-block w3-round-large w3-metro-dark-green" type="button" form="form1" value="Make certificate" onclick="display()"><b>Make certificate</b></button>
+            <hr>
+        </form> 
+        
+        <br>
+        <div class="w3-panel w3-theme w3-round-large w3-padding w3-center">
+            <h3 class="kanit-regular-italic" >Show off your achievement with an all-new, <b>UPDATED</b> design!</h3>
+            <img src="cert.png" style="height: 300px;">
+            <h3 class="kanit-regular-italic" >Make all your friends and family be <b>proud of you</b></h3>
+            <button class="w3-button w3-block w3-round-large w3-theme-d3" onclick="openForm()"><h5 class="kanit-regular-italic">Get your certifcate NOW!</h5></button>
+        </div>
+        <br>
+
+        <div class="form-popup" id="form2">
+            <form name="form2" action="/action_page.php" class="form-container" id="pop">
+                <h2 class="kanit-light">Create your certificate</h2>
+                <hr>
+                <div class="w3-panel w3-theme-d2 w3-round-large w3-padding-small w3-center">
+                    <h3 class="kanit-regular-italic" >Congratulations!</h3>
+                    <h6 class="kanit-regular">You are embarking on an incredible journey toward mastering the art of front-end development. With every step you take, you are building the skills and creativity needed to craft beautiful, engaging, and impactful digital experiences. Your dedication and passion will not only shape your future but also inspire others and leave a lasting impression on the ever-evolving world of technology. Keep striving, learning, and growing—amazing achievements await you!</h6>
+                    <br>
+                    <h3 class="kanit-medium"> &#x2B0A; Get your complementary certificate below: &#x2B0B;</h3>
+                </div>
+                <div class="w3-panel w3-theme-d3 w3-round w3-padding form-input">
+                    <label for="name" class="kanit-regular-italic"><h5>Enter your name:</h5></label>
+                    <input class="w3-input w3-border w3-round-large" type="text" id="name" name="name" size="50" value="hello"><br>
+                </div>
+                <button class="w3-button w3-block w3-round-large w3-metro-dark-green" type="button" form="form1" value="Make certificate" onclick="displayPop()"><b>Make certificate</b></button>
+                <br>
+              <button type="button" class="w3-button w3-block w3-round-large w3-theme" onclick="closeForm()">Close</button>
+            </form>
+          </div>
     </main>
     <footer>
-        <p>CISW-17</p>
+        <div class="w3-container w3-center w3-padding w3-theme-d5 kanit-light"> 
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <p>Copyright 2025-2025 by Example Inc. No Rights Reserved.</p>
+        </div>
+        
     </footer>
 </body>
 </html>

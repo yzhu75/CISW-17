@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+
+    <title>12 - Create a Form</title>
+    <!-- Yifan Zhu
+         13 - Create a Form
+         11/26/2024 -->
+        
+    <style>
+        body{
+    font-size: 18px;
+    line-height: 1.5em;
+    background-color: #f3f3f3;
+    color: #212427;
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+    width: 80%;
+
+}
+
+div{
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h1, h2{
+    font-weight: 400;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+@media screen and (min-width: 750px) {
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1.25em;
+    }
+
+    #form{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 749px) {
+    body{
+        line-height: 1.2em;
+    }
+    h1{
+        font-size: 1.25em;
+    }
+    h2{
+        font-size: 1.1em;
+    }
+    #form{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header class="w3-container">
+        <br>
+        <div class="w3-content">
+            <div class="w3-card-4 w3-padding-16 w3-pale-green">
+                <h1>
+                    Example Form
+                </h1>
+            </div>
+        </div>
+        <br>
+        <div class="w3-content"  id="form">
+            <div class="w3-card-4 w3-padding-16 w3-light-grey">
+                <form class="w3-container">
+                    <label for="fname">First name:</label><br>
+                    <input class="w3-input w3-border w3-round" type="text" id="firstName" name="firstName" value="Yifan" placeholder="Yifan">
+                    <label for="lname">Last name:</label><br>
+                    <input class="w3-input w3-border w3-round" type="text" id="lastName" name="lastName" value="Zhu" placeholder="Zhu">
+                    <label for="Message">Message</label><br>
+                    <input class="w3-input w3-border w3-round" type="text" id="message" name="message" value="I love Mt. SAC" placeholder="I love Mt. SAC" size="50">
+                    <p>I love to code in:</p>
+                    <input class="w3-check" type="checkbox" id="lang1" name="lang1">
+                    <label for="vehicle1">HTML</label><br>
+                    <input class="w3-check" type="checkbox" id="lang2" name="lang2">
+                    <label for="vehicle1">CSS</label><br>
+                    <input class="w3-check" type="checkbox" id="lang3" name="lang3">
+                    <label for="vehicle1">JavaScript</label><br>
+                    <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+                        <p>Submission currently not available due to <a href="https://www.crowdstrike.com/en-us/" target="_blank">CrowdStrike</a> service outage. <a href="https://www.mtsac.edu/" target="_blank">Click here</a> to learn more.</p>
+                      </div> 
+                </form>
+            </div>
+        </div>      
+    </header>
+</body>
+
+</html>

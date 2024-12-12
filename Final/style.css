@@ -1,21 +1,62 @@
 body {
     margin: 0 auto; /* 0 margin for top & bottom, auto for right and left */
-    max-width: 600px;
+    max-width: 1000px;
 }
 
-footer p {
-    color: rgb(160, 160, 160); 
-    text-align: center; 
-    padding: 5em;
-}
 
 h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
 hr {
-    border-top: 1px dotted darkslategrey;
+    border-top: 3px dotted rgb(29, 38, 51);
+}
+
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 40, 51, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
   }
+
+  .form-container {
+    margin: 0 auto; 
+    max-width: 800px;
+  }
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+.form-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-input label {
+    flex: 0 0 150px;
+    text-align: center;
+    margin-right: 1rem;
+}
+
 
 .darkmode {
     background-color: rgb(36, 36, 36);
@@ -29,3 +70,145 @@ hr {
 .show {
     display: block;
 }
+
+.petit-formal-script-regular {
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+
+
+  .w3-theme-l5 {color:#000 !important; background-color:#f0f4f8 !important}
+  .w3-theme-l4 {color:#000 !important; background-color:#cddbe7 !important}
+  .w3-theme-l3 {color:#000 !important; background-color:#9bb7d0 !important}
+  .w3-theme-l2 {color:#fff !important; background-color:#6993b8 !important}
+  .w3-theme-l1 {color:#fff !important; background-color:#456f93 !important}
+  .w3-theme-d1 {color:#fff !important; background-color:#294257 !important}
+  .w3-theme-d2 {color:#fff !important; background-color:#253a4e !important}
+  .w3-theme-d3 {color:#fff !important; background-color:#203344 !important}
+  .w3-theme-d4 {color:#fff !important; background-color:#1b2c3a !important}
+  .w3-theme-d5 {color:#fff !important; background-color:#172531 !important}
+  
+  .w3-theme-light {color:#000 !important; background-color:#f0f4f8 !important}
+  .w3-theme-dark {color:#fff !important; background-color:#172531 !important}
+  .w3-theme-action {color:#fff !important; background-color:#172531 !important}
+  
+  .w3-theme {color:#fff !important; background-color:#2e4a62 !important}
+  .w3-text-theme {color:#2e4a62 !important}
+  .w3-border-theme {border-color:#2e4a62 !important}
+  
+  .w3-hover-theme:hover {color:#fff !important; background-color:#2e4a62 !important}
+  .w3-hover-text-theme:hover {color:#2e4a62 !important}
+  .w3-hover-border-theme:hover {border-color:#2e4a62 !important}
+

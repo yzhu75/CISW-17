@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 13 Notes</title>
+    <!-- Yifan Zhu
+         Lesson 12 Notes
+         11/24/2024 -->
+    <style>
+        body{
+            font-size: 18px;
+            line-height: 1.5em;
+            background-color: #f3f3f3;
+            color: #212427;
+            font-family: Helvetica, sans-serif;
+        }
+
+        
+
+        h1{
+            text-align: center;
+        }
+
+        h1, h2{
+            font-weight: 400;
+        }
+
+        h2, h3{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+        a.none{
+            text-decoration: none;
+        }
+        a.link{
+            color:crimson;
+        }
+        
+
+        @media screen and (min-width: 750px) {
+            h1{
+                font-size: 1.5em;
+            }
+            h2{
+                font-size: 1.25em;
+            }
+
+            #small_table{
+                width: 30%;
+            }
+            #medium_table{
+                width: 60%;
+            }
+        }
+        @media screen and (max-width: 749px) {
+            body{
+                line-height: 1.2em;
+            }
+            h1{
+                font-size: 1.25em;
+            }
+            h2{
+                font-size: 1.1em;
+            }
+            #small_table, #medium_table{
+                width: 95%;
+            }
+        }
+    </style>
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+<body class="w3-light_gray">
+    <header class="w3-container">
+        <div class="w3-content">
+            <h1>Week 13 Notes</h1>
+        </div>      
+    </header>
+    <main>
+        <div id="lesson25" class="w3-container w3-margin">
+            <div class="w3-content" style="max-width: 960px;">
+                <h1 class="w3-blue-grey">
+                    Lesson 27: Working with Web-Based Forms
+                </h1>
+                <h3>
+                    What You'll Learn in this Lesson
+                </h3>
+                <ul class="w3-ul w3-border ">
+                    <li>How HTML forms work</li>
+                    <li>How to create the front end of an HTML form</li>
+                    <li>How to name pieces of form data</li>
+                    <li>How to include hidden data in forms</li>
+                    <li>How to choose the correct form input controls for different situations</li>
+                    <li>How to validate form data</li>
+                    <li>How to submit form data</li>
+                    <li>How to use the form object with JavaScript</li>
+                    </ul>
+                <h4 class="w3-blue-grey w3-padding-small">How HTML Forms Work</h4>
+                <p>
+                    Web forms allow users to provide feedback, orders, and other information. This lesson focuses on creating front-end forms, not server-side handling, and requires programming language knowledge.
+                </p>
+                <p>
+                    An HTML form is a web page where users input information for sending to a database or third-party system. Understanding the server-side process is crucial, and web hosting providers often offer back-end scripts for simple form processing.
+                </p>
+                <p>
+                    A form has a submit button, which sends user information to a URL for processing. Additional technical knowledge is needed for more complex tasks like online store security. Check your web hosting provider's user guide for available form-processing scripts, such as Perl or PHP.
+                </p>
+                <h4 class="w3-blue-grey w3-padding-small">Creating a Form</h4>
+                <p>
+                    Every form must begin with an opening <code class="w3-codespan">&lt;form></code> tag, which can be located anywhere in the body of the HTML document. The <code class="w3-codespan">&lt;form></code> tag typically has three attributes, <code class="w3-codespan">name </code><code class="w3-codespan">method </code>and <code class="w3-codespan">action</code>
+                </p>
+                <div class="w3-code htmlHigh notranslate">
+                    &lt;form name="my_form" method="post" action="myprocessingscript.php">
+                </div>
+                <p>
+                    The most common used <code class="w3-codespan">method</code> is <code class="w3-codespan">post</code>, which sends the result of the form entry as a document. Use <code class="w3-codespan">method="get"</code> to submit results as part of the URL query string in certain cases. 
+                </p>
+                <p>
+                    The <code class="w3-codespan">action</code> attribute allows users to specify the address for sending form data, either to a form-processing program or to their email address, depending on their computer configuration.
+                </p>
+                <h4 class="w3-blue-grey w3-padding-small">Accepting Text Input</h4>
+                <p>
+                    Use the <code class="w3-codespan">&lt;input></code> tag within a form to ask for specific information, ideally between'and'tags. Place elements alongside text, images, and other HTML tags for easier code comprehension.
+                </p>
+                <div class="w3-code htmlHigh notranslate">
+                    &lt;input type="text"id="the_name"name="the_name" placeholder="Enter your full name." size="50"required autofocus><br>
+                </div>
+                <p>
+                    Input elements must be named and processed by a back-end script, identifying each item as a variable with a value. Form-processing scripts work with variable names and values.
+                </p>
+                <h4 class="w3-blue-grey w3-padding-small">Labeling Each Piece of Form Data</h4>
+                <p>
+                    Labeling form data is different from naming or identifying form elements for later usage. Instead, the <code class="w3-codespan">&lt;label>&lt;/label></code> tag pair contains text that serves as a form element caption. A label element in a form element is crucial for screen-reader software since it gives context.
+                </p>
+                <div class="w3-code htmlHigh notranslate">
+                        &lt;label class="question" for="the_name">What is your name?&lt;/label>
+
+                </div>
+                <h4 class="w3-blue-grey w3-padding-small">Grouping Form Elements</h4>
+                <p>
+                    The <code class="w3-codespan">&lt;fieldset></code> element frames form elements to offer context for users, whether using a web browser or screen-reader software. The <code class="w3-codespan">&lt;fieldset></code> element establishes the grouping, whereas the <code class="w3-codespan">&lt;legend></code> element displays or reads the corresponding text.
+                </p>
+                <h4 class="w3-blue-grey w3-padding-small">Including Hidden Data in Forms</h4>
+                <p>
+                    To send data items to a server script without user visibility, use an <code class="w3-codespan">&lt;input></code> tag with a type="hidden" attribute. This attribute adds name and value to form results. If using a web hosting provider's form-processing script, specify where to email results.
+                </p>
+                <div class="w3-code htmlHigh notranslate">
+                    &lt;input type="hidden"name="mailto"value="me@mysite.com">
+                </div>
+                <h4 class="w3-blue-grey w3-padding-small">Using HTML5 Form Validation</h4>
+                <p>
+                    HTML5 has revolutionized web development by introducing form validation, eliminating the need for complex JavaScript-based validation. Forms are automatically validated unless the novalidate attribute is used in the <code class="w3-codespan">&lt;form></code> element. Fields are validated for content and type, not just content.
+                </p>
+                <p>
+                    The pattern attribute of the <code class="w3-codespan">&lt;input></code> field allows you to specify your pattern-matching requirements using regular expressions, ensuring your input element only contains numbers and letters.
+                </p>
+                <div class="w3-code htmlHigh notranslate">
+                    &lt;input type="text" id="the_text" name="the_text"
+                    placeholder="Please enter only letters and numbers!"
+                    size="50" pattern="[a-z,A-Z,0-9]" required>
+                </div>
+                <h4 class="w3-blue-grey w3-padding-small">Submitting Form Data</h4>
+                <p>
+                    Forms often include buttons that transmit form data to a server script or initiate JavaScript actions. Label the Submit button with any label using the <code class="w3-codespan">value</code> attribute. You may also add a Reset option to let people start again if they change their minds or make errors.
+                </p>
+                <h4 class="w3-blue-grey w3-padding-small">Accessing Form Elements with JavaScript</h4>
+                <p>
+                    The <code class="w3-codespan">form</code> object's <code class="w3-codespan">elements</code> array, which includes objects for each form element, is its most essential feature. You may refer to an element by name or array index.
+                </p>
+                <p>
+                    The length property of forms and elements can be used to determine the number of objects in an array, while the W3C DOM can be used to access form elements by using an id attribute on the form element.
+                </p>
+            </div>
+            
+                
+
+        </div>
+        <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+
+        <script>
+            w3CodeColor();
+        </script>
+    </main>
+    <footer>
+        <p style="color: rgb(160, 160, 160); text-align: center; padding: 5em;">CISW-17 Yifan</p>
+    </footer>
+</body>
+</html>
